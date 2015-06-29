@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Push.xcodeproj">
+      location = "self:/Users/daniel/code/warbler/Push/pushtest.xcodeproj">
    </FileRef>
 </Workspace>

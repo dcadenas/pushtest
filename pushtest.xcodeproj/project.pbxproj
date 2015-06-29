@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		65EE8C8F1B35E1F6000A646C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EE8C8D1B35E1F6000A646C /* Main.storyboard */; };
 		65EE8C911B35E1F6000A646C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EE8C901B35E1F6000A646C /* Images.xcassets */; };
 		65EE8C941B35E1F6000A646C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EE8C921B35E1F6000A646C /* LaunchScreen.xib */; };
-		65EE8CA01B35E1F6000A646C /* PushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE8C9F1B35E1F6000A646C /* PushTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65EE8C841B35E1F6000A646C /* Push.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Push.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EE8C841B35E1F6000A646C /* pushtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EE8C881B35E1F6000A646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65EE8C891B35E1F6000A646C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65EE8C8B1B35E1F6000A646C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65EE8C8E1B35E1F6000A646C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65EE8C901B35E1F6000A646C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		65EE8C931B35E1F6000A646C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		65EE8C991B35E1F6000A646C /* PushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65EE8C9E1B35E1F6000A646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65EE8C9F1B35E1F6000A646C /* PushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTests.swift; sourceTree = "<group>"; };
+		65EE8C991B35E1F6000A646C /* pushtestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pushtestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +56,7 @@
 		65EE8C7B1B35E1F6000A646C = {
 			isa = PBXGroup;
 			children = (
-				65EE8C861B35E1F6000A646C /* Push */,
-				65EE8C9C1B35E1F6000A646C /* PushTests */,
+				65EE8C861B35E1F6000A646C /* pushtest */,
 				65EE8C851B35E1F6000A646C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,13 +64,13 @@
 		65EE8C851B35E1F6000A646C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65EE8C841B35E1F6000A646C /* Push.app */,
-				65EE8C991B35E1F6000A646C /* PushTests.xctest */,
+				65EE8C841B35E1F6000A646C /* pushtest.app */,
+				65EE8C991B35E1F6000A646C /* pushtestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		65EE8C861B35E1F6000A646C /* Push */ = {
+		65EE8C861B35E1F6000A646C /* pushtest */ = {
 			isa = PBXGroup;
 			children = (
 				65EE8C891B35E1F6000A646C /* AppDelegate.swift */,
@@ -84,6 +80,7 @@
 				65EE8C921B35E1F6000A646C /* LaunchScreen.xib */,
 				65EE8C871B35E1F6000A646C /* Supporting Files */,
 			);
+			name = pushtest;
 			path = Push;
 			sourceTree = "<group>";
 		};
@@ -95,29 +92,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		65EE8C9C1B35E1F6000A646C /* PushTests */ = {
-			isa = PBXGroup;
-			children = (
-				65EE8C9F1B35E1F6000A646C /* PushTests.swift */,
-				65EE8C9D1B35E1F6000A646C /* Supporting Files */,
-			);
-			path = PushTests;
-			sourceTree = "<group>";
-		};
-		65EE8C9D1B35E1F6000A646C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				65EE8C9E1B35E1F6000A646C /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		65EE8C831B35E1F6000A646C /* Push */ = {
+		65EE8C831B35E1F6000A646C /* pushtest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65EE8CA31B35E1F6000A646C /* Build configuration list for PBXNativeTarget "Push" */;
+			buildConfigurationList = 65EE8CA31B35E1F6000A646C /* Build configuration list for PBXNativeTarget "pushtest" */;
 			buildPhases = (
 				65EE8C801B35E1F6000A646C /* Sources */,
 				65EE8C811B35E1F6000A646C /* Frameworks */,
@@ -127,14 +107,14 @@
 			);
 			dependencies = (
 			);
-			name = Push;
+			name = pushtest;
 			productName = Push;
-			productReference = 65EE8C841B35E1F6000A646C /* Push.app */;
+			productReference = 65EE8C841B35E1F6000A646C /* pushtest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		65EE8C981B35E1F6000A646C /* PushTests */ = {
+		65EE8C981B35E1F6000A646C /* pushtestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65EE8CA61B35E1F6000A646C /* Build configuration list for PBXNativeTarget "PushTests" */;
+			buildConfigurationList = 65EE8CA61B35E1F6000A646C /* Build configuration list for PBXNativeTarget "pushtestTests" */;
 			buildPhases = (
 				65EE8C951B35E1F6000A646C /* Sources */,
 				65EE8C961B35E1F6000A646C /* Frameworks */,
@@ -145,9 +125,9 @@
 			dependencies = (
 				65EE8C9B1B35E1F6000A646C /* PBXTargetDependency */,
 			);
-			name = PushTests;
+			name = pushtestTests;
 			productName = PushTests;
-			productReference = 65EE8C991B35E1F6000A646C /* PushTests.xctest */;
+			productReference = 65EE8C991B35E1F6000A646C /* pushtestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -161,6 +141,7 @@
 				TargetAttributes = {
 					65EE8C831B35E1F6000A646C = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = FU5BU675QQ;
 					};
 					65EE8C981B35E1F6000A646C = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -168,8 +149,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 65EE8C7F1B35E1F6000A646C /* Build configuration list for PBXProject "Push" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 65EE8C7F1B35E1F6000A646C /* Build configuration list for PBXProject "pushtest" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,8 +162,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65EE8C831B35E1F6000A646C /* Push */,
-				65EE8C981B35E1F6000A646C /* PushTests */,
+				65EE8C831B35E1F6000A646C /* pushtest */,
+				65EE8C981B35E1F6000A646C /* pushtestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -221,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65EE8CA01B35E1F6000A646C /* PushTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +210,7 @@
 /* Begin PBXTargetDependency section */
 		65EE8C9B1B35E1F6000A646C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65EE8C831B35E1F6000A646C /* Push */;
+			target = 65EE8C831B35E1F6000A646C /* pushtest */;
 			targetProxy = 65EE8C9A1B35E1F6000A646C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,9 +320,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pushtest;
+				PROVISIONING_PROFILE = "b7008907-4c2a-4fff-830a-88f4ad131190";
 			};
 			name = Debug;
 		};
@@ -350,9 +333,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pushtest;
+				PROVISIONING_PROFILE = "b7008907-4c2a-4fff-830a-88f4ad131190";
 			};
 			name = Release;
 		};
@@ -370,7 +356,7 @@
 				);
 				INFOPLIST_FILE = PushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pushtestTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Push.app/Push";
 			};
 			name = Debug;
@@ -385,7 +371,7 @@
 				);
 				INFOPLIST_FILE = PushTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = pushtestTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Push.app/Push";
 			};
 			name = Release;
@@ -393,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		65EE8C7F1B35E1F6000A646C /* Build configuration list for PBXProject "Push" */ = {
+		65EE8C7F1B35E1F6000A646C /* Build configuration list for PBXProject "pushtest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65EE8CA11B35E1F6000A646C /* Debug */,
@@ -402,21 +388,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65EE8CA31B35E1F6000A646C /* Build configuration list for PBXNativeTarget "Push" */ = {
+		65EE8CA31B35E1F6000A646C /* Build configuration list for PBXNativeTarget "pushtest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65EE8CA41B35E1F6000A646C /* Debug */,
 				65EE8CA51B35E1F6000A646C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		65EE8CA61B35E1F6000A646C /* Build configuration list for PBXNativeTarget "PushTests" */ = {
+		65EE8CA61B35E1F6000A646C /* Build configuration list for PBXNativeTarget "pushtestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65EE8CA71B35E1F6000A646C /* Debug */,
 				65EE8CA81B35E1F6000A646C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
