@@ -349,8 +349,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Push/HockeySDK.embeddedframework",
@@ -358,7 +358,7 @@
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = pushtest;
-				PROVISIONING_PROFILE = "b7008907-4c2a-4fff-830a-88f4ad131190";
+				PROVISIONING_PROFILE = "8a0156d2-b0ea-4ed7-b3c1-b835a77bb3a5";
 			};
 			name = Debug;
 		};
@@ -366,8 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Push/HockeySDK.embeddedframework",
@@ -375,7 +375,7 @@
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = pushtest;
-				PROVISIONING_PROFILE = "b7008907-4c2a-4fff-830a-88f4ad131190";
+				PROVISIONING_PROFILE = "8a0156d2-b0ea-4ed7-b3c1-b835a77bb3a5";
 			};
 			name = Release;
 		};
