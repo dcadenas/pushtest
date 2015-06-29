@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652228F01B420940009CF891 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652228EF1B420940009CF891 /* AssetsLibrary.framework */; };
+		652228F21B420963009CF891 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652228F11B420963009CF891 /* HockeySDK.framework */; };
+		652228F41B420AB3009CF891 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652228F31B420AB3009CF891 /* SystemConfiguration.framework */; };
 		65EE8C8A1B35E1F6000A646C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE8C891B35E1F6000A646C /* AppDelegate.swift */; };
 		65EE8C8C1B35E1F6000A646C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EE8C8B1B35E1F6000A646C /* ViewController.swift */; };
 		65EE8C8F1B35E1F6000A646C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EE8C8D1B35E1F6000A646C /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		652228EF1B420940009CF891 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		652228F11B420963009CF891 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HockeySDK.framework; path = Push/HockeySDK.embeddedframework/HockeySDK.framework; sourceTree = "<group>"; };
+		652228F31B420AB3009CF891 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		65EE8C841B35E1F6000A646C /* pushtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EE8C881B35E1F6000A646C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65EE8C891B35E1F6000A646C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652228F41B420AB3009CF891 /* SystemConfiguration.framework in Frameworks */,
+				652228F21B420963009CF891 /* HockeySDK.framework in Frameworks */,
+				652228F01B420940009CF891 /* AssetsLibrary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +65,9 @@
 		65EE8C7B1B35E1F6000A646C = {
 			isa = PBXGroup;
 			children = (
+				652228F31B420AB3009CF891 /* SystemConfiguration.framework */,
+				652228F11B420963009CF891 /* HockeySDK.framework */,
+				652228EF1B420940009CF891 /* AssetsLibrary.framework */,
 				65EE8C861B35E1F6000A646C /* pushtest */,
 				65EE8C851B35E1F6000A646C /* Products */,
 			);
@@ -102,6 +114,7 @@
 				65EE8C801B35E1F6000A646C /* Sources */,
 				65EE8C811B35E1F6000A646C /* Frameworks */,
 				65EE8C821B35E1F6000A646C /* Resources */,
+				652228EE1B420566009CF891 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -187,6 +200,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		652228EE1B420566009CF891 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65EE8C801B35E1F6000A646C /* Sources */ = {
@@ -322,6 +351,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Push/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = pushtest;
@@ -335,6 +368,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daniel Cadenas (NVA846BA99)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Push/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = Push/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = pushtest;
