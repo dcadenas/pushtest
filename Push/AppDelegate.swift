@@ -19,16 +19,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(types)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
-        
         BITHockeyManager.sharedHockeyManager().configureWithIdentifier("ba05523d95e9b7080733bf9445bfd9e4")
         // Do some additional configuration if needed here
         BITHockeyManager.sharedHockeyManager().startManager()
         BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation()
 
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        if let window = window {
+            window.backgroundColor = UIColor.whiteColor()
+            window.rootViewController = ViewController()
+            window.makeKeyAndVisible()
+        }
         return true
+        
+        
     }
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
