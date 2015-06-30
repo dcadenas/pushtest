@@ -18,15 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(types)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         BITHockeyManager.sharedHockeyManager().configureWithIdentifier("ba05523d95e9b7080733bf9445bfd9e4")
         // Do some additional configuration if needed here
         BITHockeyManager.sharedHockeyManager().startManager()
         BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation()
 
-        let types = UIUserNotificationSettings(forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(types)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
-        
         return true
     }
     
@@ -46,7 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
         
         UIPasteboard.generalPasteboard().string = deviceTokenString
-        var alert = UIAlertController(title: "Device Token", message: "Device token copied to clipboard.\n\(deviceTokenString)\n ", preferredStyle: UIAlertControllerStyle.Alert)
+        var alert = UIAlertController(title: "Device Token", message: "Device token copied to the clipboard:\n\(deviceTokenString)\n ", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+            // ...
+        }
+        alert.addAction(OKAction)
         window?.rootViewController?.presentViewController(alert, animated: true, completion: nil)
     }
 
